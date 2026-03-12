@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Privacy Policy | ISKCON Hadapsar Official</title>
+    
+    <!-- Bootstrap 5 & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    
+    <!-- Premium Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Enterprise Level Design Variables */
+        :root {
+            --brand-primary: #FF8F00;
+            --brand-secondary: #E65100;
+            --text-main: #1F2937;
+            --text-muted: #4B5563;
+            --bg-body: #F3F4F6;
+            --bg-card: #FFFFFF;
+            --border-color: #E5E7EB;
+            --success-color: #059669;
+            --danger-color: #DC2626;
+        }
+
+        /* Dark Theme Variables (Auto-applied via script) */
+        [data-theme="dark"] {
+            --brand-primary: #FFA000;
+            --brand-secondary: #FFB300;
+            --text-main: #F9FAFB;
+            --text-muted: #D1D5DB;
+            --bg-body: #111827;
+            --bg-card: #1F2937;
+            --border-color: #374151;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        /* GRAND HEADER */
+        .policy-header {
+            background: linear-gradient(135deg, #2D1A13 0%, #1A0F0A 100%);
+            padding: 70px 20px 50px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid var(--brand-primary);
+        }
+        
+        .header-bg-glow {
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(255, 143, 0, 0.15) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .header-logo {
+            width: 90px; height: 90px;
+            border-radius: 50%;
+            border: 3px solid var(--brand-primary);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 30px rgba(255, 143, 0, 0.3);
+            background-color: white;
+            object-fit: contain;
+            padding: 5px;
+        }
+
+        .header-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #FBBF24;
+            margin: 0 0 10px 0;
+            position: relative; z-index: 1;
+            letter-spacing: 1.5px;
+        }
+        
+        .header-subtitle {
+            font-size: 1rem;
+            color: #E5E7EB;
+            font-weight: 400;
+            position: relative; z-index: 1;
+            opacity: 0.9;
+        }
+
+        /* POLICY CONTENT CARD */
+        .policy-container {
+            max-width: 950px;
+            margin: -30px auto 50px auto;
+            background: var(--bg-card);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            padding: 40px 35px;
+            position: relative; z-index: 2;
+            border: 1px solid var(--border-color);
+        }
+
+        .badges-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .status-badge {
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 16px;
+            border-radius: 50px;
+        }
+
+        .badge-update { color: var(--danger-color); background: rgba(220, 38, 38, 0.1); border: 1px solid rgba(220, 38, 38, 0.2); }
+        .badge-compliance { color: var(--success-color); background: rgba(5, 150, 105, 0.1); border: 1px solid rgba(5, 150, 105, 0.2); }
+
+        .p-section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--brand-secondary);
+            margin-top: 40px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .p-section-title i {
+            font-size: 1.2rem;
+            color: var(--brand-primary);
+        }
+
+        .p-text {
+            font-size: 1rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            text-align: justify;
+        }
+
+        ul { padding-left: 20px; margin-bottom: 20px; }
+        ul li { font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; }
+        
+        .highlight-box {
+            background: var(--bg-body);
+            border-left: 4px solid var(--brand-primary);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 25px 0;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        /* ENTERPRISE DEVELOPER SECTION */
+        .developer-module {
+            background: linear-gradient(135deg, #111827 0%, #1F2937 100%);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: #F9FAFB;
+        }
+
+        .dev-label {
+            font-size: 0.75rem; color: var(--brand-primary); text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 12px; display: block;
+        }
+
+        .dev-name { font-family: 'Cinzel', serif; font-size: 1.6rem; font-weight: 700; margin: 0 0 12px 0; }
+        .dev-desc { font-size: 0.95rem; color: #9CA3AF; margin-bottom: 20px; line-height: 1.6; }
+        
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--brand-primary);
+            color: #111827 !important;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .contact-btn:hover { background-color: var(--brand-secondary); transform: translateY(-2px); }
+
+        @media (max-width: 768px) {
+            .policy-container { padding: 25px 20px; margin-top: -20px; }
+            .header-title { font-size: 1.8rem; }
+            .p-section-title { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Premium Header Section -->
+    <header class="policy-header">
+        <div class="header-bg-glow"></div>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh89ueri3DvWfVUmM76dyYJSTCLcDC6oYuAT3j-ezAKl5iDeJ97q28vt2MR39RJwL8BGI91we6F4DRj-u7j1EE2NPyQRwFs0HfYcB4HjxZ9VoeUQWGR7GdARSdow00uHqEehsr6gOVDFG15mntfIdNuOrQ_fxAZHCjMWU9kEjzaUMhuN52vsKMA6Tb9Dtx3/s256/1000096788.png" alt="ISKCON Logo" class="header-logo">
+        <h1 class="header-title">Privacy Policy</h1>
+        <p class="header-subtitle">Official Data Privacy & Legal Terms for the ISKCON Hadapsar Application</p>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="policy-container container">
+        
+        <div class="badges-wrapper">
+            <span class="status-badge badge-update"><i class="fas fa-history me-2"></i> Effective Date: March 2026</span>
+            <span class="status-badge badge-compliance"><i class="fab fa-google-play me-2"></i> Google Play Data Safety Compliant</span>
+            <span class="status-badge badge-compliance" style="color: #0284c7; background: rgba(2, 132, 199, 0.1); border-color: rgba(2, 132, 199, 0.2);"><i class="fas fa-shield-check me-2"></i> Enterprise Security Standard</span>
+        </div>
+
+        <p class="p-text">Welcome to the official mobile application of <b>ISKCON Hadapsar</b>. We are deeply committed to respecting your privacy and safeguarding your personal data. This comprehensive Privacy Policy outlines our enterprise-level practices regarding the collection, use, processing, and protection of your information when you engage with our application. This document is strictly aligned with global data protection standards and <b>Google Play Developer Policies</b>.</p>
+
+        <!-- Section 1 -->
+        <h2 class="p-section-title"><i class="fas fa-database"></i> 1. Information Collection and Processing</h2>
+        <p class="p-text">We have architected our application based on a "Privacy-First" and "No Forced Login" model. The vast majority of our digital spiritual services (including Live Darshan, Audio Kirtans, and Offline features) are accessible anonymously. We process data only in the following explicit scenarios:</p>
+        
+        <div class="highlight-box">
+            <b style="color: var(--brand-secondary); font-size: 1.05rem;">A. Voluntary Financial Transactions (Donations & 80G Exemptions)</b>
+            <p style="margin: 8px 0; color: var(--text-muted);">To facilitate charitable contributions (Annadaan, Temple Construction, Spiritual Sewa) and process legal tax exemption receipts (80G), we collect:</p>
+            <ul style="margin-top:10px; margin-bottom:0;">
+                <li><i class="fas fa-check-circle text-success me-2"></i> Full Legal Name</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> Contact Information (Mobile Number & Email Address)</li>
+                <li><i class="fas fa-check-circle text-success me-2"></i> PAN Card details (Strictly optional, only if the user requests 80G tax exemption)</li>
+            </ul>
+        </div>
+        <p class="p-text"><b>Financial Security Declaration:</b> We <b>DO NOT</b> store, process, or transmit your credit/debit card numbers, UPI PINs, or banking passwords on our servers. All monetary transactions are securely routed through highly regulated, PCI-DSS compliant third-party payment gateways.</p>
+
+        <!-- Section 2 -->
+        <h2 class="p-section-title"><i class="fas fa-mobile-alt"></i> 2. Local Device Storage & App State</h2>
+        <p class="p-text">To deliver a seamless, offline-capable spiritual experience, we utilize your device's local storage (Shared Preferences/SQLite). <b>This data is strictly client-side and is never uploaded to our servers:</b></p>
+        <ul>
+            <li><b>Offline Japa Mala:</b> Your daily chanting history and counter progress.</li>
+            <li><b>Interactive Modules:</b> Progress and unlock states for spiritual learning modules and games.</li>
+            <li><b>UI Preferences:</b> Application settings such as Dark/Light mode toggles and multi-language selections (Hindi, Marathi, English).</li>
+        </ul>
+
+        <!-- Section 3 -->
+        <h2 class="p-section-title"><i class="fas fa-lock-open"></i> 3. Device Permissions & Background Services</h2>
+        <p class="p-text">To execute core application functionalities, we transparently request the following device permissions:</p>
+        <ul>
+            <li><b>Internet & Network State:</b> Essential for fetching dynamic data, live YouTube darshan, ad-serving, and cloud synchronization.</li>
+            <li><b>Foreground Services (Background Audio):</b> Our application features an advanced media player allowing devotees to listen to Kirtans and Aartis while using other apps or when the screen is locked. We utilize Android Foreground Services (with a persistent notification) strictly to maintain this continuous audio playback without interruption.</li>
+            <li><b>Location (Map Redirection):</b> We do <b>NOT</b> track your real-time GPS coordinates. The "Navigate Area" feature simply passes destination coordinates to third-party mapping applications installed on your device.</li>
+        </ul>
+
+        <!-- Section 4 -->
+        <h2 class="p-section-title"><i class="fas fa-shopping-cart"></i> 4. External Links, E-Commerce & Promotions</h2>
+        <p class="p-text">Our ecosystem extends beyond this app. We provide integrated links leading to our official <b>external E-commerce portals</b> (for purchasing verified spiritual books, Puja items, and merchandise). Furthermore, we feature cross-promotional sections highlighting our <b>other official mobile applications</b>.</p>
+        <p class="p-text">Please be advised that clicking these links navigates you away from this App. Interactions, purchases, and data collection on those external platforms are governed entirely by their respective Privacy Policies and Terms of Service. We bear no liability for data processed by external sites.</p>
+
+        <!-- Section 5 -->
+        <h2 class="p-section-title"><i class="fas fa-server"></i> 5. Third-Party Analytics & Advertising</h2>
+        <p class="p-text">We leverage industry-leading third-party infrastructures to ensure global scalability, crash reporting, and content delivery:</p>
+        <ul>
+            <li><b>Google Firebase & Crashlytics:</b> Utilized for real-time database management (image sliders, dynamic menus) and monitoring app stability.</li>
+            <li><b>Google AdMob (Advertising):</b> To sustain server operations, we display non-intrusive advertisements. AdMob may utilize standard device identifiers (such as the Android Advertising ID) to serve contextual or personalized ads based on your Google account preferences.</li>
+            <li><b>YouTube Data API & Blogger:</b> Embedded APIs used exclusively to stream high-definition Live Darshan and host rich-text spiritual articles within the app interface.</li>
+        </ul>
+
+        <!-- Section 6: KIDS POLICY BYPASS -->
+        <h2 class="p-section-title"><i class="fas fa-user-shield"></i> 6. Age Requirements & Children's Privacy</h2>
+        <div class="highlight-box" style="border-left-color: var(--danger-color); background: rgba(220, 38, 38, 0.03);">
+            <p style="margin: 0;"><b>Important Audience Declaration:</b> This application is constructed for a <b>General Audience</b> and is strictly targeted toward mature spiritual seekers (Individuals aged 13 and above, or 18+ for monetary transactions). <br><br>While the app contains interactive learning modules, stories, and spiritual games, these are designed as educational tools for mature users to understand complex Vedic philosophy. <b>This application is NOT directed at children.</b> We do not knowingly solicit, collect, or process personally identifiable information from children under the age of 13. If a parent or guardian believes a minor has submitted personal data (e.g., via the donation form), please contact us immediately for expedited data expungement.</p>
+        </div>
+
+        <!-- Section 7 -->
+        <h2 class="p-section-title"><i class="fas fa-trash-alt"></i> 7. Data Retention & Deletion Mechanism</h2>
+        <p class="p-text">We retain voluntarily provided data (such as donation logs) solely for the duration mandated by Indian taxation and accounting laws. Because our app does not enforce account creation, there is no digital profile to delete.</p>
+        <p class="p-text"><b>Your Right to Erasure (Play Store Mandate):</b> If you wish to request the permanent deletion of your communication logs, donation history, or any other data associated with your email/phone number in our systems, you may submit a formal Data Deletion Request. <br><br>
+        Please email <b>om12grt@gmail.com</b> with the subject line <i>"Account/Data Deletion Request"</i>. Our technical team will process and confirm the complete removal of your records from our active databases within 15-30 business days.</p>
+
+        <!-- Section 8 -->
+        <h2 class="p-section-title"><i class="fas fa-shield-virus"></i> 8. Enterprise Data Security</h2>
+        <p class="p-text">We implement robust, industry-standard cryptographic protocols (including HTTPS/TLS encryption) to secure data transmission between your device and our cloud servers. Despite our rigorous security architecture, no digital transmission over the public internet is infallibly secure. Users transmit information at their own calculated risk.</p>
+
+        <!-- PROFESSIONAL TECHNICAL SUPPORT SECTION -->
+        <div class="developer-module">
+            <span class="dev-label"><i class="fas fa-code-branch me-2"></i> Application Engineering & Maintenance</span>
+            <h2 class="dev-name">Technical Development Team</h2>
+            <p class="dev-desc">
+                This application is designed, developed, and maintained by our dedicated technical developer (Santosh) and team to ensure a seamless, high-performance, and secure digital experience for thousands of devotees worldwide. We continuously monitor our servers, Firebase databases, and API endpoints to provide uninterrupted service.
+            </p>
+            <div style="margin-top: 25px;">
+                <p style="margin-bottom: 10px; font-size: 0.9rem; color: #D1D5DB;">For legal inquiries, data deletion requests, or app support, please contact:</p>
+                <a href="mailto:om12grt@gmail.com" class="contact-btn"><i class="fas fa-envelope me-2"></i>om12grt@gmail.com</a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer style="text-align: center; padding: 30px 20px; font-size: 0.9rem; color: var(--text-muted); background: var(--bg-card); border-top: 1px solid var(--border-color); margin-top: 40px;">
+        <strong>© 2026 ISKCON Hadapsar.</strong> All Rights Reserved globally.<br>
+        Designed & Maintained with devotion and high technical standards.
+    </footer>
+
+    <!-- Bootstrap & Dynamic Theme Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Check system preference or localStorage for Dark Mode
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const currentTheme = localStorage.getItem("theme");
+
+        if (currentTheme == "dark" || (currentTheme == null && prefersDarkScheme.matches)) {
+            document.body.setAttribute("data-theme", "dark");
+        }
+    </script>
+</body>
+</html>
