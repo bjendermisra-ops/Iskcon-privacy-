@@ -24,10 +24,10 @@
             --border-color: #E5E7EB;
             --success-color: #059669;
             --danger-color: #DC2626;
+            --info-color: #0284C7;
         }
 
-        /* Dark Theme Variables (Auto-applied via script) */
-        [data-theme="dark"] {
+        /* Dark Theme Variables */[data-theme="dark"] {
             --brand-primary: #FFA000;
             --brand-secondary: #FFB300;
             --text-main: #F9FAFB;
@@ -131,6 +131,7 @@
 
         .badge-update { color: var(--danger-color); background: rgba(220, 38, 38, 0.1); border: 1px solid rgba(220, 38, 38, 0.2); }
         .badge-compliance { color: var(--success-color); background: rgba(5, 150, 105, 0.1); border: 1px solid rgba(5, 150, 105, 0.2); }
+        .badge-security { color: var(--info-color); background: rgba(2, 132, 199, 0.1); border: 1px solid rgba(2, 132, 199, 0.2); }
 
         .p-section-title {
             font-family: 'Cinzel', serif;
@@ -144,20 +145,10 @@
             gap: 12px;
         }
         
-        .p-section-title i {
-            font-size: 1.2rem;
-            color: var(--brand-primary);
-        }
-
-        .p-text {
-            font-size: 1rem;
-            color: var(--text-muted);
-            margin-bottom: 16px;
-            text-align: justify;
-        }
-
+        .p-section-title i { font-size: 1.2rem; color: var(--brand-primary); }
+        .p-text { font-size: 1rem; color: var(--text-muted); margin-bottom: 16px; text-align: justify; }
         ul { padding-left: 20px; margin-bottom: 20px; }
-        ul li { font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; }
+        ul li { font-size: 1rem; color: var(--text-muted); margin-bottom: 10px; line-height: 1.7; }
         
         .highlight-box {
             background: var(--bg-body);
@@ -170,9 +161,9 @@
             border-top: 1px solid var(--border-color);
             border-right: 1px solid var(--border-color);
             border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
         }
 
-        /* ENTERPRISE DEVELOPER SECTION */
         .developer-module {
             background: linear-gradient(135deg, #111827 0%, #1F2937 100%);
             border-radius: 12px;
@@ -183,10 +174,7 @@
             color: #F9FAFB;
         }
 
-        .dev-label {
-            font-size: 0.75rem; color: var(--brand-primary); text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 12px; display: block;
-        }
-
+        .dev-label { font-size: 0.75rem; color: var(--brand-primary); text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px; margin-bottom: 12px; display: block; }
         .dev-name { font-family: 'Cinzel', serif; font-size: 1.6rem; font-weight: 700; margin: 0 0 12px 0; }
         .dev-desc { font-size: 0.95rem; color: #9CA3AF; margin-bottom: 20px; line-height: 1.6; }
         
@@ -199,8 +187,9 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(255, 143, 0, 0.3);
         }
-        .contact-btn:hover { background-color: var(--brand-secondary); transform: translateY(-2px); }
+        .contact-btn:hover { background-color: var(--brand-secondary); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(230, 81, 0, 0.4); }
 
         @media (max-width: 768px) {
             .policy-container { padding: 25px 20px; margin-top: -20px; }
@@ -211,7 +200,6 @@
 </head>
 <body>
 
-    <!-- Premium Header Section -->
     <header class="policy-header">
         <div class="header-bg-glow"></div>
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh89ueri3DvWfVUmM76dyYJSTCLcDC6oYuAT3j-ezAKl5iDeJ97q28vt2MR39RJwL8BGI91we6F4DRj-u7j1EE2NPyQRwFs0HfYcB4HjxZ9VoeUQWGR7GdARSdow00uHqEehsr6gOVDFG15mntfIdNuOrQ_fxAZHCjMWU9kEjzaUMhuN52vsKMA6Tb9Dtx3/s256/1000096788.png" alt="ISKCON Logo" class="header-logo">
@@ -219,20 +207,20 @@
         <p class="header-subtitle">Official Data Privacy & Legal Terms for the ISKCON Hadapsar Application</p>
     </header>
 
-    <!-- Main Content Container -->
     <main class="policy-container container">
         
         <div class="badges-wrapper">
             <span class="status-badge badge-update"><i class="fas fa-history me-2"></i> Effective Date: March 2026</span>
             <span class="status-badge badge-compliance"><i class="fab fa-google-play me-2"></i> Google Play Data Safety Compliant</span>
-            <span class="status-badge badge-compliance" style="color: #0284c7; background: rgba(2, 132, 199, 0.1); border-color: rgba(2, 132, 199, 0.2);"><i class="fas fa-shield-check me-2"></i> Enterprise Security Standard</span>
+            <span class="status-badge badge-security"><i class="fas fa-shield-check me-2"></i> Enterprise Security Standard</span>
+            <span class="status-badge badge-security" style="color: #6366F1; background: rgba(99, 102, 241, 0.1); border-color: rgba(99, 102, 241, 0.2);"><i class="fas fa-lock me-2"></i> Data Encrypted in Transit</span>
         </div>
 
-        <p class="p-text">Welcome to the official mobile application of <b>ISKCON Hadapsar</b>. We are deeply committed to respecting your privacy and safeguarding your personal data. This comprehensive Privacy Policy outlines our enterprise-level practices regarding the collection, use, processing, and protection of your information when you engage with our application. This document is strictly aligned with global data protection standards and <b>Google Play Developer Policies</b>.</p>
+        <p class="p-text">Welcome to the official mobile application of <b>ISKCON Hadapsar</b>. We are deeply committed to respecting your privacy and safeguarding your personal data. This comprehensive Privacy Policy outlines our enterprise-level practices regarding the collection, use, processing, and protection of your information when you engage with our application. This document is strictly aligned with global data protection standards (including guidelines applicable in 2026) and the latest <b>Google Play Developer Policies</b>.</p>
 
         <!-- Section 1 -->
         <h2 class="p-section-title"><i class="fas fa-database"></i> 1. Information Collection and Processing</h2>
-        <p class="p-text">We have architected our application based on a "Privacy-First" and "No Forced Login" model. The vast majority of our digital spiritual services (including Live Darshan, Audio Kirtans, and Offline features) are accessible anonymously. We process data only in the following explicit scenarios:</p>
+        <p class="p-text">We have architected our application based on a "Privacy-First" and "No Forced Login" model. The vast majority of our digital spiritual services (including Live Darshan, Native Alarms, Audio Kirtans, and Offline features) are accessible anonymously. We process data only in the following explicit scenarios:</p>
         
         <div class="highlight-box">
             <b style="color: var(--brand-secondary); font-size: 1.05rem;">A. Voluntary Financial Transactions (Donations & 80G Exemptions)</b>
@@ -243,65 +231,74 @@
                 <li><i class="fas fa-check-circle text-success me-2"></i> PAN Card details (Strictly optional, only if the user requests 80G tax exemption)</li>
             </ul>
         </div>
-        <p class="p-text"><b>Financial Security Declaration:</b> We <b>DO NOT</b> store, process, or transmit your credit/debit card numbers, UPI PINs, or banking passwords on our servers. All monetary transactions are securely routed through highly regulated, PCI-DSS compliant third-party payment gateways.</p>
+        <p class="p-text"><b>Financial Security Declaration:</b> We <b>DO NOT</b> store, process, or transmit your credit/debit card numbers, UPI PINs, or banking passwords on our servers. All monetary transactions are securely routed through highly regulated, RBI-approved, PCI-DSS compliant third-party payment gateways. All data transmitted between your device and our servers is strictly <b>Encrypted in Transit using modern HTTPS protocols.</b></p>
 
         <!-- Section 2 -->
         <h2 class="p-section-title"><i class="fas fa-mobile-alt"></i> 2. Local Device Storage & App State</h2>
-        <p class="p-text">To deliver a seamless, offline-capable spiritual experience, we utilize your device's local storage (Shared Preferences/SQLite). <b>This data is strictly client-side and is never uploaded to our servers:</b></p>
+        <p class="p-text">To deliver a seamless, offline-capable spiritual experience, we utilize your device's local storage (Shared Preferences/SQLite). <b>This data is strictly client-side and is never uploaded to our servers or shared with third parties:</b></p>
         <ul>
-            <li><b>Offline Japa Mala:</b> Your daily chanting history and counter progress.</li>
+            <li><b>Offline Japa Mala:</b> Your daily chanting history and counter progress remain securely on your device.</li>
             <li><b>Interactive Modules:</b> Progress and unlock states for spiritual learning modules and games.</li>
             <li><b>UI Preferences:</b> Application settings such as Dark/Light mode toggles and multi-language selections (Hindi, Marathi, English).</li>
         </ul>
 
-        <!-- Section 3 -->
-        <h2 class="p-section-title"><i class="fas fa-lock-open"></i> 3. Device Permissions & Background Services</h2>
-        <p class="p-text">To execute core application functionalities, we transparently request the following device permissions:</p>
+        <!-- Section 3: Enhanced for Play Store Compliance -->
+        <h2 class="p-section-title"><i class="fas fa-bell"></i> 3. Device Permissions, Alarms & Background Processing</h2>
+        <p class="p-text">To execute core application functionalities without interruption, we transparently request the following device permissions in strict accordance with Google Play's core functionality and battery optimization policies:</p>
         <ul>
-            <li><b>Internet & Network State:</b> Essential for fetching dynamic data, live YouTube darshan, ad-serving, and cloud synchronization.</li>
-            <li><b>Foreground Services (Background Audio):</b> Our application features an advanced media player allowing devotees to listen to Kirtans and Aartis while using other apps or when the screen is locked. We utilize Android Foreground Services (with a persistent notification) strictly to maintain this continuous audio playback without interruption.</li>
-            <li><b>Location (Map Redirection):</b> We do <b>NOT</b> track your real-time GPS coordinates. The "Navigate Area" feature simply passes destination coordinates to third-party mapping applications installed on your device.</li>
+            <li><b>Notifications (POST_NOTIFICATIONS):</b> Used exclusively to send you spiritual reminders, Japa Sadhana progress alerts, and daily Aarti timings. We do not use notifications for spam or third-party marketing.</li>
+            <li><b>Exact Alarms (SCHEDULE_EXACT_ALARM):</b> Essential for our native "Japa Tracker" and "Aarti Schedule" systems. This allows the app to ring exactly at the time of an Aarti or send you your Japa intervals. <br><br><i>*Compliance Notice: To ensure maximum security, battery optimization, and adherence to the latest Android 14+ guidelines, we utilize standard SCHEDULE_EXACT_ALARM. We have explicitly deprecated and permanently removed the use of USE_EXACT_ALARM and USE_FULL_SCREEN_INTENT from our application architecture.</i></li>
+            <li><b>Wake Lock & High-Priority Notifications:</b> Used strictly during an active Alarm/Reminder to deliver a High-Priority Android Notification to briefly wake up your device screen safely, ensuring you do not miss your spiritual schedule without violating background activity rules.</li>
+            <li><b>Foreground Services (Background Audio):</b> Our application features an advanced media player allowing devotees to listen to Kirtans and Aartis while using other apps. We utilize Android Foreground Services (with a persistent notification) strictly to maintain continuous audio playback.</li>
+            <li><b>Internet & Network State:</b> Essential to verify your connection status before loading Live Darshan streams via our integrated Web-Engine to prevent application crashes.</li>
         </ul>
 
         <!-- Section 4 -->
-        <h2 class="p-section-title"><i class="fas fa-shopping-cart"></i> 4. External Links, E-Commerce & Promotions</h2>
+        <h2 class="p-section-title"><i class="fas fa-shopping-cart"></i> 4. External Links & Promotions</h2>
         <p class="p-text">Our ecosystem extends beyond this app. We provide integrated links leading to our official <b>external E-commerce portals</b> (for purchasing verified spiritual books, Puja items, and merchandise). Furthermore, we feature cross-promotional sections highlighting our <b>other official mobile applications</b>.</p>
-        <p class="p-text">Please be advised that clicking these links navigates you away from this App. Interactions, purchases, and data collection on those external platforms are governed entirely by their respective Privacy Policies and Terms of Service. We bear no liability for data processed by external sites.</p>
+        <p class="p-text">Please be advised that clicking these links navigates you away from this App. Interactions, purchases, and data collection on those external platforms are governed entirely by their respective Privacy Policies and Terms of Service.</p>
 
-        <!-- Section 5 -->
-        <h2 class="p-section-title"><i class="fas fa-server"></i> 5. Third-Party Analytics & Advertising</h2>
-        <p class="p-text">We leverage industry-leading third-party infrastructures to ensure global scalability, crash reporting, and content delivery:</p>
+        <!-- Section 5: Ironclad AdMob & App Open Ad Compliance -->
+        <h2 class="p-section-title"><i class="fas fa-server"></i> 5. Third-Party Analytics & Advertising Policies</h2>
+        <p class="p-text">We leverage industry-leading third-party infrastructures to ensure global scalability, crash reporting, and content delivery. To sustain server operations and ongoing technical maintenance, we display carefully calibrated advertisements via <b>Google AdMob</b>. Our advertising architecture is engineered to strictly follow the <b>Google Play Better Ads Standards</b>:</p>
         <ul>
-            <li><b>Google Firebase & Crashlytics:</b> Utilized for real-time database management (image sliders, dynamic menus) and monitoring app stability.</li>
-            <li><b>Google AdMob (Advertising):</b> To sustain server operations, we display non-intrusive advertisements. AdMob may utilize standard device identifiers (such as the Android Advertising ID) to serve contextual or personalized ads based on your Google account preferences.</li>
-            <li><b>YouTube Data API & Blogger:</b> Embedded APIs used exclusively to stream high-definition Live Darshan and host rich-text spiritual articles within the app interface.</li>
+            <li><b>App Open Ads (Strict Compliance):</b> We utilize App Open Ads designed to trigger seamlessly upon a "Cold Start" (fresh launch) or when resuming the application from the background. We explicitly <b>do not</b> display App Open Ads over Splash Screens or loading dialogs, ensuring full compliance with Google's unexpected interstitial ad policies.</li>
+            <li><b>Frequency Capped Interstitial Ads:</b> To preserve your uninterrupted devotional experience, Interstitial Ads are algorithmically frequency-capped. They are triggered strictly upon natural transitions, specifically limited to displaying only once every <b>5 application page navigations</b>.</li>
+            <li><b>Advertising ID & Personalization:</b> AdMob utilizes standard device identifiers (such as the Android Advertising ID) to serve contextual or personalized ads based on your Google account preferences. You retain the right to opt out of personalized ads at any time via your device's Google settings (Settings > Google > Ads).</li>
+            <li><b>Firebase & YouTube APIs:</b> We utilize Firebase for real-time database management and crash monitoring (without collecting personal device data), alongside embedded YouTube Data APIs used exclusively to stream high-definition Live Darshan within the app interface.</li>
         </ul>
 
-        <!-- Section 6: KIDS POLICY BYPASS -->
+        <!-- Section 6 -->
         <h2 class="p-section-title"><i class="fas fa-user-shield"></i> 6. Age Requirements & Children's Privacy</h2>
         <div class="highlight-box" style="border-left-color: var(--danger-color); background: rgba(220, 38, 38, 0.03);">
-            <p style="margin: 0;"><b>Important Audience Declaration:</b> This application is constructed for a <b>General Audience</b> and is strictly targeted toward mature spiritual seekers (Individuals aged 13 and above, or 18+ for monetary transactions). <br><br>While the app contains interactive learning modules, stories, and spiritual games, these are designed as educational tools for mature users to understand complex Vedic philosophy. <b>This application is NOT directed at children.</b> We do not knowingly solicit, collect, or process personally identifiable information from children under the age of 13. If a parent or guardian believes a minor has submitted personal data (e.g., via the donation form), please contact us immediately for expedited data expungement.</p>
+            <p style="margin: 0;"><b>Important Audience Declaration:</b> This application is constructed for a <b>General Audience</b> and is strictly targeted toward mature spiritual seekers (Individuals aged 13 and above, or 18+ for monetary transactions). <br><br>While the app contains interactive learning modules, stories, and spiritual games, these are designed as educational tools for mature users to understand complex Vedic philosophy. <b>This application is NOT directed at children.</b> We do not knowingly solicit, collect, or process personally identifiable information from children under the age of 13.</p>
         </div>
 
         <!-- Section 7 -->
         <h2 class="p-section-title"><i class="fas fa-trash-alt"></i> 7. Data Retention & Deletion Mechanism</h2>
-        <p class="p-text">We retain voluntarily provided data (such as donation logs) solely for the duration mandated by Indian taxation and accounting laws. Because our app does not enforce account creation, there is no digital profile to delete.</p>
+        <p class="p-text">We retain voluntarily provided data (such as donation logs) solely for the duration mandated by Indian taxation and accounting laws. Because our app does not enforce account creation, there is no digital profile to delete. <b>We do not share any user data with third parties for their own marketing purposes.</b></p>
         <p class="p-text"><b>Your Right to Erasure (Play Store Mandate):</b> If you wish to request the permanent deletion of your communication logs, donation history, or any other data associated with your email/phone number in our systems, you may submit a formal Data Deletion Request. <br><br>
-        Please email <b>om12grt@gmail.com</b> with the subject line <i>"Account/Data Deletion Request"</i>. Our technical team will process and confirm the complete removal of your records from our active databases within 15-30 business days.</p>
+        Please email <a href="mailto:om12grt@gmail.com" style="color: var(--info-color); font-weight: 600;">om12grt@gmail.com</a> with the subject line <i>"Account/Data Deletion Request"</i>. Our technical engineering team will process and confirm the complete removal of your records from our active databases within 15 to 30 business days.</p>
 
-        <!-- Section 8 -->
-        <h2 class="p-section-title"><i class="fas fa-shield-virus"></i> 8. Enterprise Data Security</h2>
-        <p class="p-text">We implement robust, industry-standard cryptographic protocols (including HTTPS/TLS encryption) to secure data transmission between your device and our cloud servers. Despite our rigorous security architecture, no digital transmission over the public internet is infallibly secure. Users transmit information at their own calculated risk.</p>
+        <!-- Section 8: Dedicated Data Safety Summary -->
+        <h2 class="p-section-title"><i class="fas fa-shield-alt"></i> 8. Google Play Data Safety Summary</h2>
+        <p class="p-text">For absolute transparency and compliance with the Google Play Data Safety declaration, please note the following core principles of our architecture:</p>
+        <ul>
+            <li><b>Data Collection is Optional:</b> Users can navigate the app fully without providing any personal data. Data is only collected upon initiating a voluntary donation.</li>
+            <li><b>Data is Encrypted in Transit:</b> Any data sent to our backend services travels exclusively over secure HTTPS connections.</li>
+            <li><b>No Unauthorized Sharing:</b> Your personal data is never sold, traded, or transferred to third parties (except trusted payment gateways solely for processing your initiated transactions).</li>
+            <li><b>User Control:</b> Users possess full, unrestricted rights to request the deletion of their data at any time via the official contact mechanisms provided below.</li>
+        </ul>
 
-        <!-- PROFESSIONAL TECHNICAL SUPPORT SECTION -->
+        <!-- Professional Support Section -->
         <div class="developer-module">
             <span class="dev-label"><i class="fas fa-code-branch me-2"></i> Application Engineering & Maintenance</span>
             <h2 class="dev-name">Technical Development Team</h2>
             <p class="dev-desc">
-                This application is designed, developed, and maintained by our dedicated technical developer (Santosh) and team to ensure a seamless, high-performance, and secure digital experience for thousands of devotees worldwide. We continuously monitor our servers, Firebase databases, and API endpoints to provide uninterrupted service.
+                This application is designed, developed, and maintained by our dedicated technical developer (Santosh) and the engineering team to ensure a seamless, high-performance, and secure digital experience for thousands of devotees worldwide. We continuously monitor our servers, Firebase databases, and API endpoints to provide uninterrupted service.
             </p>
             <div style="margin-top: 25px;">
-                <p style="margin-bottom: 10px; font-size: 0.9rem; color: #D1D5DB;">For legal inquiries, data deletion requests, or app support, please contact:</p>
+                <p style="margin-bottom: 10px; font-size: 0.9rem; color: #D1D5DB;">For legal inquiries, Play Store compliance audits, data deletion requests, or app support, please contact:</p>
                 <a href="mailto:om12grt@gmail.com" class="contact-btn"><i class="fas fa-envelope me-2"></i>om12grt@gmail.com</a>
             </div>
         </div>
@@ -313,13 +310,10 @@
         Designed & Maintained with devotion and high technical standards.
     </footer>
 
-    <!-- Bootstrap & Dynamic Theme Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Check system preference or localStorage for Dark Mode
         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
         const currentTheme = localStorage.getItem("theme");
-
         if (currentTheme == "dark" || (currentTheme == null && prefersDarkScheme.matches)) {
             document.body.setAttribute("data-theme", "dark");
         }
